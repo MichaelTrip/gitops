@@ -4,6 +4,6 @@ metadata:
   name: prd-rancher-demo
 name: rancher-demo
 repo: https://michaeltrip.github.io/helm-charts
-version: 0.5.0
+version: 0.5.1
 releaseName: prd-hello-world
 values: values-prd.yml
