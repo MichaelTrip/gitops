@@ -1,0 +1,9 @@
+apiVersion: builtin
+kind: HelmChartInflationGenerator
+metadata:
+  name: prd-rancher-demo
+name: rancher-demo
+repo: https://michaeltrip.github.io/helm-charts
+version: 0.5.0
+releaseName: prd-hello-world
+values: values-prd.yml

@@ -2,14 +2,13 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 metadata:
   namespace: tst-helloworld
-resources:
-  - ../../base
 
 namePrefix: tst-
 
-helm:
-  # Reference the chart from a Helm chart repository
-  releases:
-  - name: hello-world
-    values:
-      - values.yml
+generators:
+  - chartInflator.yml
+
+# helmCharts:
+#   - name: rancher-demo
+#     releaseName: tst-hello-world
+#     valuesFile: values-tst.yaml
