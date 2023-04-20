@@ -6,5 +6,5 @@ name: rancher-demo
 repo: https://michaeltrip.github.io/helm-charts
 version: 0.5.1
 releaseName: tst-hello-world
-values: values-tst.yml
+valuesFile: values-tst.yml
 
