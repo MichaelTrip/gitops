@@ -24,6 +24,15 @@ spec:
         repoURL: git@github.com:MichaelTrip/gitops.git
         targetRevision: HEAD
         path: 'apps/nginx/overlays/{{cluster}}'
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
+          allowEmpty: true
+        syncOptions:
+          - CreateNamespace=true
+          - PruneLast=true
+
       destination:
         server: '{{url}}'
         namespace: '{{cluster}}-nginx'
