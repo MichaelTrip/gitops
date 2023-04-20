@@ -24,8 +24,8 @@ spec:
         repoURL: git@github.com:MichaelTrip/gitops.git
         targetRevision: HEAD
         path: 'apps/hello-world/overlays/{{cluster}}'
-      plugin:
-        name: kustomize-enable-helm
+        plugin:
+          name: kustomize-enable-helm
       syncPolicy:
         automated:
           prune: true
