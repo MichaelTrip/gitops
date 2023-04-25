@@ -9,5 +9,7 @@ namePrefix: prod-
 
 configMapGenerator:
   - name: hello-world-cm
+    behavior: replace
     literals:
-      - ENVIRONMENT=production
+      - ENVIRONMENT=base
+

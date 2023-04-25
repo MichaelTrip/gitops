@@ -9,6 +9,8 @@ namePrefix: acc-
 
 configMapGenerator:
   - name: hello-world-cm
+    behavior: replace
     literals:
-      - ENVIRONMENT=acceptance
+      - ENVIRONMENT=base
+
 
