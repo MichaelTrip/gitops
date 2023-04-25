@@ -19,10 +19,10 @@ spec:
         command:
           - sh
           - -c
-          - "echo welcome to $ENVIRONMENT > /usr/share/nginx/html/index.html"
+          - "sleep 3600"
         mounts:
-          - name: nginx-index
-            mountPath: /usr/share/nginx/html
+          - name: workdir
+            mountPath: "/workdir"
         envFrom:
         - configMapRef:
             name: hello-world-cm
@@ -32,8 +32,8 @@ spec:
         ports:
         - containerPort: 80
         mounts:
-          - name: nginx-index
-            mountPath: /usr/share/nginx/html
+          - name: workdir
+            mountPath: "/usr/share/nginx/html"
       volumeMounts:
-        - name:  nginx-index
+        - name:  workdir
           emptyDir: {}
