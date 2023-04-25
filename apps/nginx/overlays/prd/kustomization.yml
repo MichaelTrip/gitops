@@ -9,7 +9,7 @@ namespace: prd-nginx
 namePrefix: prod-
 
 configMapGenerator:
-  - name: hello-world
+  - name: hello-world-cm
     behavior: replace
     literals:
       - ENVIRONMENT=production
