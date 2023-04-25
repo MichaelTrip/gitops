@@ -11,4 +11,4 @@ service:
 ingress:
   enabled: false
 
-replicaCount: 25
+replicaCount: 12
