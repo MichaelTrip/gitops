@@ -1,7 +1,7 @@
 app:
   localization:
     title: "Rancher Demo dev2"
-    pets: "chameleons" # available pets include 'cows' and 'chameleons' and possibly 'cowmeleons'
+    pets: "cowmeleons" # available pets include 'cows' and 'chameleons' and possibly 'cowmeleons'
     color: "pink" # container background color (any color name from the CSS pallete)
 
 service:
