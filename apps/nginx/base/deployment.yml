@@ -19,7 +19,7 @@ spec:
         command:
           - sh
           - -c
-          - "sleep 3600"
+          - "echo welcome to $ENVIRONMENT > /workdir/index.html"
         mounts:
           - name: workdir
             mountPath: "/workdir"
