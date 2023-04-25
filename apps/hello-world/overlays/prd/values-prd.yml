@@ -1,7 +1,7 @@
 app:
   localization:
     title: "Rancher Demo prd"
-    pets: "cows" # available pets include 'cows' and 'chameleons' and possibly 'cowmeleons'
+    pets: "chameleons" # available pets include 'cows' and 'chameleons' and possibly 'cowmeleons'
     color: "green" # container background color (any color name from the CSS pallete)
 
 service:
