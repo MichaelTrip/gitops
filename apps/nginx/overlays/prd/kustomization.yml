@@ -1,15 +1,16 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 metadata:
-  namespace: prd-nginx
+  name: nginx
 resources:
   - ../../base
 
+namespace: prd-nginx
 namePrefix: prod-
 
 configMapGenerator:
-  - name: hello-world-cm
+  - name: hello-world
     behavior: replace
     literals:
-      - ENVIRONMENT=base
+      - ENVIRONMENT=production
 
