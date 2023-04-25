@@ -6,3 +6,9 @@ resources:
   - ../../base
 
 namePrefix: acc-
+
+configMapGenerator:
+  - name: hello-world-cm
+    literals:
+      - ENVIRONMENT=acceptance
+

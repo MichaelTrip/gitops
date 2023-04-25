@@ -13,8 +13,28 @@ spec:
       labels:
         app: nginx
     spec:
+      initContainers:
+      - name: echo-environment
+        image: busybox:latest
+        command:
+          - sh
+          - -c
+          - "echo welcome to $ENVIRONMENT > /usr/share/nginx/html/index.html"
+        mounts:
+          - name: nginx-index
+            mountPath: /usr/share/nginx/html
+        envFrom:
+          - configMapKeyRef:
+            name: hello-world-cm
+
       containers:
       - name: nginx
         image: nginx:latest
         ports:
         - containerPort: 80
+        mounts:
+          - name: nginx-index
+            mountPath: /usr/share/nginx/html
+      volumeMounts:
+        - name:  nginx-index
+          emptyDir: {}

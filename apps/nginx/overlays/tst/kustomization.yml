@@ -7,3 +7,7 @@ resources:
 
 namePrefix: tst-
 
+configMapGenerator:
+  - name: hello-world-cm
+    literals:
+      - ENVIRONMENT=test

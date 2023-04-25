@@ -15,4 +15,8 @@ images:
 - name: nginx
   newTag: latest
 
+configMapGenerator:
+  - name: hello-world-cm
+    literals:
+      - ENVIRONMENT=base
 

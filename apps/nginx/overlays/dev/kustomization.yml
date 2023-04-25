@@ -8,3 +8,7 @@ resources:
 
 namePrefix: dev-
 
+configMapGenerator:
+  - name: hello-world-cm
+    literals:
+      - ENVIRONMENT=develop
