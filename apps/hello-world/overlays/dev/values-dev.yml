@@ -1,8 +1,8 @@
 app:
   localization:
-    title: "Rancher Demo dev"
-    pets: "cows" # available pets include 'cows' and 'chameleons' and possibly 'cowmeleons'
-    color: "brown" # container background color (any color name from the CSS pallete)
+    title: "Rancher Demo dev2"
+    pets: "chameleons" # available pets include 'cows' and 'chameleons' and possibly 'cowmeleons'
+    color: "purple" # container background color (any color name from the CSS pallete)
 
 service:
   type: LoadBalancer
